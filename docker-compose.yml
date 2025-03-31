@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  hadoop-namenode:
+    image: apache/hadoop:3.4.1
+    container_name: namenode
+    ports:
+      - "50070:50070"
+    environment:
+      - CLUSTER_NAME=hadoop-cluster
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+
+  hadoop-datanode:
+    image: apache/hadoop:3.4.1
+    container_name: datanode
+    ports:
+      - "50075:50075"
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    depends_on:
+      - hadoop-namenode
+
+  hive-metastore:
+    image: apache/hive:4.0.1
+    container_name: hive-metastore
+    ports:
+      - "9083:9083"
+    environment:
+      - HIVE_METASTORE_URI=thrift://hive-metastore:9083
+    depends_on:
+      - hadoop-namenode
+      - hadoop-datanode
+
+  hive-server:
+    image: apache/hive:4.0.1
+    container_name: hive-server
+    ports:
+      - "10000:10000"
+    environment:
+      - HIVE_SERVER_HOST=hive-server
+    depends_on:
+      - hive-metastore
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
