@@ -1,11 +1,14 @@
+DROP TABLE IF EXISTS kv;
+DROP DATABASE IF EXISTS kv_demographics CASCADE;
+
 -- Create the new database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS KV_Demographics;
+CREATE DATABASE IF NOT EXISTS kv_demographics;
 
 -- Use the newly created database
-USE KV_Demographics;
+USE kv_demographics;
 
--- Create the table for day.csv file in the database daydb
-CREATE TABLE IF NOT EXISTS KV (
+-- Create the table for day.csv file in the database kv_demographics
+CREATE TABLE IF NOT EXISTS kv (
   Sr_No INT,
   Name STRING,
   Age INT,
@@ -24,4 +27,4 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','  -- CSV field separator
 LINES TERMINATED BY '\n'  -- Line separator for each row
 STORED AS TEXTFILE
-LOCATION 'hdfs://namenode:8020/user/hive/warehouse/KV_Demographics.db/KV'
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/kv_demographics.db/kv'
