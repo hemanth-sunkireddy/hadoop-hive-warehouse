@@ -28,3 +28,5 @@ FIELDS TERMINATED BY ','  -- CSV field separator
 LINES TERMINATED BY '\n'  -- Line separator for each row
 STORED AS TEXTFILE
 LOCATION 'hdfs://namenode:8020/user/hive/warehouse/kv_demographics.db/kv'
+
+!hadoop fs -put -f data.csv hdfs://namenode:8020/user/hive/warehouse/kv_demographics.db/kv;
