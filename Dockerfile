@@ -1,6 +1,8 @@
-FROM apache/hadoop:3.4.1
-ENV HADOOP_HOME /opt/hadoop
-ENV PATH $PATH:$HADOOP_HOME/bin
-COPY ./hadoop-config /opt/hadoop/etc/hadoop/
-EXPOSE 50070 8088 9000
+FROM hemanth-sunkireddy/hadoop:latest
+
+# Install openssh-clients (ssh command)
+RUN sudo yum install -y openssh-clients
+
+# Continue with the original entrypoint or CMD
 CMD ["/opt/hadoop/sbin/start-dfs.sh"]
+
