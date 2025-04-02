@@ -1,0 +1,74 @@
+ID,Participant ID,UsageOfComputers,DoctorsReport,OtherInformation,BabyGivenOxygen,MaternalHealth,ParentsAge,NaturalOrMedicationBirth,SiblingsRelevantHistory,ColourVision,ChinHeadPosition,FacialAsymmetry,OcularSymmetry,Vertigo/Nauseatic Complaints
+,KV_M_10_01,,,,,,,,,,,,,
+,KV_F_11_02,,,,,,,,,,,,,
+,KV_F_08_03,,,,,,,,,,,,,
+,KV_F_09_04,,,,,,,,,,,,,
+,KV_F_11_05,,,,,,,,,,,,,
+,KV_F_09_06,,,,,,,,,,,,,
+,KV_F_11_07,,,,,,,,,,,,,
+,KV_F_11_08,,,,,,,,,,,,,
+,KV_M_10_09,,,,,,,,,,,,,
+,KV_F_10_10,,,,,,,,,,,,,
+,KV_F_12_11,,,,,,,,,,,,,
+,KV_F_08_12,,,,,,,,,,,,,
+,KV_F_11_13,,,,,,,,,,,,,
+,KV_F_12_14,,,,,,,,,,,,,
+,KV_M_09_15,,,,,,,,,,,,,
+,KV_M_09_16,,,,,,,,,,,,,
+,KV_M_10_17,,,,,,,,,,,,,
+,KV_M_13_18,,,,,,,,,,,,,
+,KV_M_12_19,,,,,,,,,,,,,
+,KV_F_10_20,,,,,,,,,,,,,
+,KV_F_09_22,,,,,,,,,,,,,
+,KV_F_10_23,,,,,,,,,,,,,
+,KV_M_14_24,,,,,,,,,,,,,
+,BSV_F_11_001,,"10 Degrees Deviation/ Monocular closure
+H/o Fever - 1 week back
+H/o Headache
+Mild Limitation Abduction
+Suggested Patching
+AR: +0.50/-0.75 *160
+ +0.25/0.50 *150
+HCRT(BE) : Central",Dist WFDT- uncrossed diplopia,,,,,,,,,,
+,BSV_M_09_002,,,,,,,,,,,,,
+,BSV_M_08_003,,"Fell down from the steps at 1.5 years, minor head injury, Doctor said it is associated with eye",,,,,,,,,,,
+,BSV_M_08_004,Only 15min per week,,,,,,,,,,,,
+,BSV_M_08_005,Only 15min per week,,,,,,,,,,,,
+,BSV_F_09_006,,,,,,,,,,,,,
+,BSV_M_07_007,No,,,,,,,,,,,,No
+,BSV_M_08_008,,,,,,,,,,,,,
+,BSV_M_07_009,,,,,,,,,,,,,
+,BSV_M_06-011,No,,,,,,,,,,,,
+,BSV_M_07-012,,,,,,,,,,,,,
+,BSV/PLR_M_08_013,No,,,,,,,,,,,,
+,BSV_M_14_014,,,,,,,,,,,,,
+,PLR_BSV_M_06_017,,,,,,,,,,,,,
+,BSV_F_11_022,,,"1.After 3 times dilation,PLR and BSV was performed.2.People with refractive error might have problems in Stereopsis.",,,,,,,,,,
+,BSV_F_10_23,,,"Primary diagnosis - Amblyopia in right eye, 1st time doctor visit 2022, Allergy / Myatro -eye drop - currently using",,,,,,,,,,
+,BSV_M_08_24,,,Primary diagnosis - inward deviation of the left eye,,,,,,,,,,
+,BSV-F-12-25,,,Stereopsis : Were not able to see because of very blur vision,,,,,,,,,,
+,BSV_M_12_26,,Doctors suspect amblyopia,,,,,,,,,,,
+,PLR_M_14_032,No,,,No,No,,Natural,Siblings Yes / History-no,13/13,Normal,Normal,Normal,No
+,PLR_08_M_033,No,,,No,No,,Medication,Siblings Yes / History-no,13/13,Normal,Normal,Normal,No
+,PLR_06_F_034,Yes,,,No,No,23-M,Natural,No,13/13,Normal,Normal,Normal,No
+,PLR_15_F_035,No,,,No,No,21-M,Natural,Siblings Yes / History-no,13/13,Normal,Normal,Normal,No
+,PLR_03_F_036,Yes,,,No,No,17-M,Natural,Siblings Yes / History-no,13/13,Normal,Normal,Normal,No
+,PLR_M_04_037,Yes,,,No,No,,Natural,No,13/13,Normal,Normal,Normal,No
+,PLR_F_05_038,Yes,,,,,,,Yes,13/13,,,,
+,PLR_M_11_039,Blind School,,,Yes 2 weeks,HTN,,,Yes,13/13,,,,
+,PLR_F_08_040,No,,,,,,,,13/13,Normal,Normal,Normal,
+,PLR_M_12_041,Yes,,,,,,,,13/13,Normal,Normal,Normal,
+,PLR_F_12_042,Yes,,,,,,,Yes,13/13,,,,
+,PLR_M_06_043,,,,,,,,,,,,,
+,PLR_M_06_044,,,,,,,,,,,,,
+,PLR_M_08_045,Yes,,,,,,,Yes,13/13,,,,
+,PLR_14_M_046,No Phone,,,No,No,23-M,Natural,Yes,13/13,Normal,Normal,Normal,No
+,PLR_13_M_047,No,,,No,No,21-M,C-section,Yes,13/13,Normal,Normal,Normal,
+,PLR_12_F_048,Yes,,,No,No,24-M,"31(F), Normal",Yes,13/13,Normal,Normal,Normal,
+,PLR_8_M_049,No,,,No,No,21-M,No,Yes,13/13,Normal,Normal,Normal,
+,PLR_10_F_050,No,,,,,,,,13/13,Normal,Normal,Normal,
+,PLR_11_M_051,Yes,,,,,,,,13/13,Normal,Normal,Normal,
+,PLR_13_F_052,,,,,,,,,,,,,
+,PLR_12_M_053,Yes 4 hrs,,,,,22-M,,,13/13,Normal,Normal,Normal,No
+,PLR_10_F_054,2 hrs,,,,,28-M,,Yes,13/13,Normal,Normal,Normal,No
+,PLR_11_F_055,No,,,,,22-M,,Yes,13/13,Normal,Normal,Normal,No

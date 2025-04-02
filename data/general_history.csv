@@ -1,0 +1,67 @@
+ID,Participant ID,AverageScreenTime ,OutdoorActivityTime,HoursOfSleep,SurrondingLight,VItaminDeficiency,IrisColor
+,KV_M_10_01,2-3 hours,1 day in a week (approx 1-1.5 hrs),8-9 hrs of sleep,,,
+,KV_F_11_02,1 hour,1-2 hours,almost 9 hrs of sleep,,,
+,KV_F_08_03,less than 1hr,1-2 hours,,,,
+,KV_F_09_04,2 hours,2-3 hours,8-9 hrs of sleep,,,
+,KV_F_11_05,2 hours,3 hours,,,,
+,KV_F_09_06,1-1.5 hours,1-2 hours,10 hrs of sleep approx,,,
+,KV_F_11_07,1 hour approx,1 hour approx,almost 8 hrs of sleep,,,
+,KV_F_11_08,Approx 1hour,1-2 hours,7-8 hours of sleep,,,
+,KV_M_10_09,1.5 hours,2 hours @ home / 2 hours @ school,,,,
+,KV_F_10_10,1-1.5 hours approx,1 hour approx,7-8 hours of sleep,,,
+,KV_F_12_11,Almost 1hour,1-2 hours,,,,
+,KV_F_08_12,10-15 Minutes,3-4 hours,,,,
+,KV_F_11_13,2 hours,2 hours approx,6 hours of sleep,,,
+,KV_F_12_14,Approx 1hour,Approx 1hour,7-8 hours of sleep,,,
+,KV_M_09_15,2.5 hrs approx,3 hours,,,,
+,KV_M_09_16,1 hour,1 hour,,,,
+,KV_M_10_17,3-4 hours,,,,,
+,KV_M_13_18,1 hour approx,1-2 hours,7-8 hours of sleep,,,
+,KV_M_12_19,Approx 1hour,Approx 1hour,almost 10 hours sleep,,,
+,KV_F_10_20,Approx 1hour,1-2 hours,almost 10 hours sleep,,,
+,KV_F_09_22,Approx 1hour,1-2 hours,7-8 hours of sleep,,,
+,KV_F_10_23,2-3 hours,1-2 hours,7-8 hours of sleep,,,
+,KV_M_14_24,1-2 hours,1 hour,,,,
+,BSV_F_11_001,No,Stayed in Hostel(6th class),Adequate,,No,Brown
+,BSV_M_09_002,5 Hours (mobile),5 minutes daily in sunlight Weekends (2-3 hours),8 Hours,,No (Balanced diet),Brown
+,BSV_M_08_003,1-2 Hours,3-4 times per week,8-9 Hours(9pm-6am),Ambient light partially,Balanced diet,Dark Brown
+,BSV_M_08_004,No,Ocassional,6-7 Hours,,Feels that there might be some deficiency(eats less often),
+,BSV_M_08_005,No mobile,2-3 Hours,9 hours,School- has Sunlight,No test done,Brown
+,BSV_F_09_006,1 hour,Outdoor activity in school only,8Hours,"Inside classroom/House, there is no adequate light. Outside there is adequate light",No test done,
+,BSV_M_07_007,4-5 Hours(when at home),Yes,8 Hours,Yes,Calcium deficiency(Does not eat well),Brown
+,BSV_M_08_008,30 min per day,Yes,8 Hours,,Yes,Brown
+,BSV_M_07_009,30 min per day,Adequate,8-9 Hours,Adequate,Normal,Brown
+,BSV_M_06-011,30 min per day,Yes,8 Hours,,,Brown
+,BSV_M_07-012,Lot,Yes,8 Hours,Yes,,Brown
+,BSV/PLR_M_08_013,1 Hour oer day,Yes,8 Hours,No,No Nutritional diet,Brown
+,BSV_M_14_014,No,Yes,8 Hours,Yes,Yes(Nutritional dirt),Brown
+,PLR_BSV_M_06_017,2 hours,does not go out,disturbed deep sleep from birth,Adequate,Adequate,
+,BSV_F_11_022,1 hour in the evening,approx. 1hour in the evening,8 Hours,Surrounding environment has light but inside the house there is no adequate light,Not tested(probably adequate),
+,BSV_F_10_23,5-6 hours,2 hours,10-11 hours,Partially present,good - water less,Brown
+,BSV_M_08_24,1-2 hours approx TV,everyday 1-2 hours,8-9 hours,Adequate,Adequate,Brown
+,BSV-F-12-25,Not much,1 hour perday,7 hrs,village - Proper Lighting,good food,Brown
+,BSV_M_12_26,Below 1 hour,1 hour,8-9 hours,"not present, adequately",normal,Brown
+,PLR_M_14_032,1 hour / perday,17hrs,7hrs perday,Good,Normal,Brown
+,PLR_08_M_033,6-7 hrs/Perday,1-2 hours perday,10hrs perday,ambient,Normal,Brown
+,PLR_06_F_034,10-30 Mins,No,10hrs perday,Good,Normal,Brown
+,PLR_15_F_035,1 hour / perday,1 hour / perday,10hrs perday,Good,Normal,Brown
+,PLR_03_F_036,5 houes / perday,No,12hrs perday,Good,Normal,Light brown
+,PLR_M_04_037,4 hours / perday,No,10hrs perday,Good,Normal,Brown
+,PLR_F_05_038,2 hrs / per day,2 hrs,10-13 yrs,Good,Normal,Brown
+,PLR_M_11_039,,,,,Normal,
+,PLR_F_08_040,,No,6 hrs,,Normal,
+,PLR_M_12_041,5-6 hours,No,,good,Normal,
+,PLR_F_12_042,1-2 hrs,No,6-10 hrs,,,
+,PLR_M_06_043,,,,,,
+,PLR_M_06_044,,,,,,
+,PLR_M_08_045,4-5 hrs,2-3 hrs,,,,
+,PLR_14_M_046,1-2 hrs,1 hr,11 hrs,tube,Nil,Brown
+,PLR_13_M_047,3-4 hrs,1-2hrs,10hrs perday,tube,Nil,Brown
+,PLR_12_F_048,2 hrs / per day,1 hr,12 hrs,LED,Nil,Dark Brown
+,PLR_8_M_049,1/2 hr,1 hour,9 hrs,tube,Nil,Brown
+,PLR_10_F_050,2 hrs / per day,,10 hrs,Good,Nil,Brown
+,PLR_11_M_051,4 hrs,1-2 hrs,11 hrs,Good,Nil,Brown
+,PLR_13_F_052,,,,,,
+,PLR_12_M_053,,2 hrs,11 hrs,Good,Nil,Brown
+,PLR_10_F_054,,,10 hrs,Good,Nil,Brown
+,PLR_11_F_055,,2 hrs,12 hrs,Good,Nil,Brown
