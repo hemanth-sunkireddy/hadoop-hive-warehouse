@@ -18,3 +18,5 @@
 
 
 **Reference:** https://hshirodkar.medium.com/apache-hive-on-docker-4d7280ac6f8e
+
+* To View files in hadoop: hdfs dfs -ls /user/hive/warehouse/btpproject.db
