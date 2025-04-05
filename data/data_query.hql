@@ -2,8 +2,8 @@
 DROP DATABASE IF EXISTS btpproject CASCADE;
 
 -- Create the database
-CREATE DATABASE IF NOT EXISTS btpproject;
-USE btpproject;
+CREATE DATABASE IF NOT EXISTS bsvdatabase;
+USE bsvdatabase;
 
 -- Drop and create the participant table
 DROP TABLE IF EXISTS participant;
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS participant (
     gender STRING,
     dob STRING
 ) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
-LOCATION 'hdfs://namenode:8020/user/hive/warehouse/btpproject.db/participant';
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participant';
 
 -- Drop and create the participanttest table
 DROP TABLE IF EXISTS participanttest;
@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS participanttest (
     participantid STRING,
     testid INT,
     testdate STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest';
 
 -- Drop and create the refractiveerror table
 DROP TABLE IF EXISTS refractiveerror;
@@ -40,7 +41,8 @@ CREATE TABLE IF NOT EXISTS refractiveerror (
     nearod STRING,
     nearos STRING,
     nearou STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/refractiveerror';
 
 -- Drop and create the familyvisualhistory table
 DROP TABLE IF EXISTS familyvisualhistory;
@@ -49,7 +51,8 @@ CREATE TABLE IF NOT EXISTS familyvisualhistory (
     participantid STRING,
     familygeneticproblems STRING,
     visualchallenges STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/familyvisualhistory';
 
 -- Drop and create the visionhistory table
 DROP TABLE IF EXISTS visionhistory;
@@ -61,7 +64,8 @@ CREATE TABLE IF NOT EXISTS visionhistory (
     anypatch STRING,
     usingglasses STRING,
     usingcontactlenses STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/visionhistory';
 
 -- Drop and create the screentimecomplaints table
 DROP TABLE IF EXISTS screentimecomplaints;
@@ -69,7 +73,8 @@ CREATE TABLE IF NOT EXISTS screentimecomplaints (
     id INT,
     participantid STRING,
     complaints STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/screentimecomplaints';
 
 -- Drop and create the generalhistory table
 DROP TABLE IF EXISTS generalhistory;
@@ -82,7 +87,8 @@ CREATE TABLE IF NOT EXISTS generalhistory (
     surroundinglight STRING,
     vitamindeficiency STRING,
     iriscolor STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/generalhistory';
 
 -- Drop and create the testsdone table
 DROP TABLE IF EXISTS testsdone;
@@ -94,7 +100,8 @@ CREATE TABLE IF NOT EXISTS testsdone (
     visualacuitytest STRING,
     ishiharatest STRING,
     synoptaphore STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/testsdone';
 
 -- Drop and create the primaryobservations table
 DROP TABLE IF EXISTS primaryobservations;
@@ -102,7 +109,8 @@ CREATE TABLE IF NOT EXISTS primaryobservations (
     id INT,
     participantid STRING,
     observationdetails STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/primaryobservations';
 
 -- Drop and create the specifictests table
 DROP TABLE IF EXISTS specifictests;
@@ -117,7 +125,8 @@ CREATE TABLE IF NOT EXISTS specifictests (
     worthforthdottest STRING,
     isiharanumber INT,
     participationnumber INT
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/specifictests';
 
 -- Drop and create the synoptophore table
 DROP TABLE IF EXISTS synoptophore;
@@ -131,7 +140,8 @@ CREATE TABLE IF NOT EXISTS synoptophore (
     smplefteye STRING,
     smpcomments STRING,
     stereopsis STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/synoptophore';
 
 -- Drop and create the complaints table
 DROP TABLE IF EXISTS complaints;
@@ -143,7 +153,8 @@ CREATE TABLE IF NOT EXISTS complaints (
     headache STRING,
     doublevision STRING,
     otherproblems STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/complaints';
 
 -- Drop and create the birthhistory table
 DROP TABLE IF EXISTS birthhistory;
@@ -155,7 +166,8 @@ CREATE TABLE IF NOT EXISTS birthhistory (
     birthcry STRING,
     birthcomplication STRING,
     developmentalmilestones STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/birthhistory';
 
 -- Drop and create the additionalinformation table
 DROP TABLE IF EXISTS additionalinformation;
@@ -176,4 +188,5 @@ CREATE TABLE IF NOT EXISTS additionalinformation (
     ocularsymmetry STRING,
     vertigocomplaints STRING,
     anteriorposteriorsegmentexamination STRING
-) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/additionalinformation';
