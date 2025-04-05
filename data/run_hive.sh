@@ -6,7 +6,7 @@ hive -f data_query.hql
 # Copy the CSV file to HDFS after the table is created
 # hadoop fs -put -f data.csv hdfs://namenode:8020/user/hive/warehouse/kv_demographics.db/kv
 hadoop fs -put -f participant.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participant
-hadoop fs -put -f participant_test.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest
+# hadoop fs -put -f participant_test.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest
 hadoop fs -put -f refractive_error.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/refractiveerror
 hadoop fs -put -f family_visual_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/familyvisualhistory
 hadoop fs -put -f vision_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/visionhistory
@@ -22,5 +22,6 @@ hadoop fs -put -f additional_information.csv hdfs://namenode:8020/user/hive/ware
 
 
 # To store videos of PLR Database
+hdfs dfs -mkdir -p hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos/
 hdfs dfs -put *.mp4 hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos/
 hdfs dfs -put videos_metadata.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata/
