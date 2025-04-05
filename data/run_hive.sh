@@ -19,3 +19,8 @@ hadoop fs -put -f synoptophore.csv hdfs://namenode:8020/user/hive/warehouse/bsvd
 hadoop fs -put -f complaints.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/complaints
 hadoop fs -put -f birth_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/birthhistory
 hadoop fs -put -f additional_information.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/additionalinformation
+
+
+# To store videos of PLR Database
+hdfs dfs -put *.mp4 hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos/
+hdfs dfs -put videos_metadata.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata/

@@ -1,5 +1,5 @@
 -- Drop the database if it exists
-DROP DATABASE IF EXISTS btpproject CASCADE;
+DROP DATABASE IF EXISTS bsvdatabase CASCADE;
 
 -- Create the database
 CREATE DATABASE IF NOT EXISTS bsvdatabase;
@@ -190,3 +190,21 @@ CREATE TABLE IF NOT EXISTS additionalinformation (
     anteriorposteriorsegmentexamination STRING
 ) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE
 LOCATION 'hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/additionalinformation';
+
+
+-- PLR Database to store video files 
+-- Drop the database if it exists
+DROP DATABASE IF EXISTS plrdatabase CASCADE;
+
+-- Create the database
+CREATE DATABASE IF NOT EXISTS plrdatabase;
+USE plrdatabase;
+CREATE EXTERNAL TABLE IF NOT EXISTS videos_metadata (
+    videoid STRING,
+    videotitle STRING,
+    videopath STRING -- HDFS video path
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata';
