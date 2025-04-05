@@ -16,6 +16,10 @@
 * hive
 * Normal SQL Operations.
 
+## Installing Python Hive
+`pip install 'pyhive[hive_pure_sasl]'`
+
+* Then Run `hive_phython.py` to get data stored in hadoop using python.
 
 **Reference:** https://hshirodkar.medium.com/apache-hive-on-docker-4d7280ac6f8e
 
