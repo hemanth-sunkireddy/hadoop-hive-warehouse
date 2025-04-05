@@ -6,16 +6,16 @@ hive -f data_query.hql
 # Copy the CSV file to HDFS after the table is created
 # hadoop fs -put -f data.csv hdfs://namenode:8020/user/hive/warehouse/kv_demographics.db/kv
 hadoop fs -put -f participant.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participant
-hadoop fs -put -f participanttest.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest
-hadoop fs -put -f refractiveerror.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/refractiveerror
-hadoop fs -put -f familyvisualhistory.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/familyvisualhistory
-hadoop fs -put -f visionhistory.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/visionhistory
-hadoop fs -put -f screentimecomplaints.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/screentimecomplaints
-hadoop fs -put -f generalhistory.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/generalhistory
-hadoop fs -put -f testsdone.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/testsdone
-hadoop fs -put -f primaryobservations.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/primaryobservations
-hadoop fs -put -f specifictests.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/specifictests
+hadoop fs -put -f participant_test.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest
+hadoop fs -put -f refractive_error.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/refractiveerror
+hadoop fs -put -f family_visual_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/familyvisualhistory
+hadoop fs -put -f vision_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/visionhistory
+hadoop fs -put -f screen_time_complaints.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/screentimecomplaints
+hadoop fs -put -f general_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/generalhistory
+hadoop fs -put -f tests_done.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/testsdone
+hadoop fs -put -f primary_observations.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/primaryobservations
+hadoop fs -put -f specific_tests.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/specifictests
 hadoop fs -put -f synoptophore.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/synoptophore
 hadoop fs -put -f complaints.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/complaints
-hadoop fs -put -f birthhistory.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/birthhistory
-hadoop fs -put -f additionalinformation.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/additionalinformation
+hadoop fs -put -f birth_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/birthhistory
+hadoop fs -put -f additional_information.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/additionalinformation
