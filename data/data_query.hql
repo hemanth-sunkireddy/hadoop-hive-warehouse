@@ -199,12 +199,40 @@ DROP DATABASE IF EXISTS plrdatabase CASCADE;
 -- Create the database
 CREATE DATABASE IF NOT EXISTS plrdatabase;
 USE plrdatabase;
-CREATE EXTERNAL TABLE IF NOT EXISTS videos_metadata (
-    videoid STRING,
-    videotitle STRING,
-    videopath STRING -- HDFS video path
+-- CREATE EXTERNAL TABLE IF NOT EXISTS videos_metadata (
+--     videoid STRING,
+ --    videotitle STRING,
+ --    videopath STRING -- HDFS video path
+-- )
+-- ROW FORMAT DELIMITED
+-- FIELDS TERMINATED BY ','
+-- STORED AS TEXTFILE
+-- LOCATION 'hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata';
+CREATE TABLE IF NOT EXISTS cropped_videos_metadata (
+    video_id INT,
+    hdfs_path STRING
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE
-LOCATION 'hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata';
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/cropped_videos_metadata';
+CREATE TABLE IF NOT EXISTS output_csvs_metadata (
+    csv_id INT,
+    hdfs_path STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/output_csvs_metadeta';
+CREATE TABLE IF NOT EXISTS participant (
+    participant_id STRING,
+    output_csv_left INT,
+    output_csv_right INT,
+    cropped_video_left INT,
+    cropped_video_right INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION 'hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/participant';
+

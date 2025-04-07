@@ -1,15 +1,16 @@
 # Hadoop Hive
 
 ## Data Preprocessing
+
 * Change the sheet names to all lowercase and without spaces in the sheet names for storing in correct databases.
 * place the excel sheet inside the `data` folder with name `data.xlsx`
 * Run `xlsx_to_csv.py` to convert xlsx to csv file.
 * csv files generates with the sheet names. Verify the correctness of the sheets.
 
-
 ## For storing Excel sheet data and Videos
+
 * chmod +x data/run_hive.sh
-*  docker-compose up
+* docker compose up
 * docker exec -it hive-server /bin/bash
 * cd ../data
 * ./run_hive.sh
@@ -17,6 +18,7 @@
 * Normal SQL Operations.
 
 ## Installing Python Hive
+
 `pip install 'pyhive[hive_pure_sasl]'`
 
 * Then Run `hive_phython.py` to get data stored in hadoop using python.

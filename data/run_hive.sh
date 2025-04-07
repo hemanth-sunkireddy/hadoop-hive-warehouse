@@ -3,10 +3,12 @@
 # Run the Hive script to create the database and table
 hive -f data_query.hql
 
-# Copy the CSV file to HDFS after the table is created
+# # Copy the CSV file to HDFS after the table is created
 # hadoop fs -put -f data.csv hdfs://namenode:8020/user/hive/warehouse/kv_demographics.db/kv
+
+
 hadoop fs -put -f participant.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participant
-# hadoop fs -put -f participant_test.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest
+hadoop fs -put -f participant_test.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/participanttest
 hadoop fs -put -f refractive_error.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/refractiveerror
 hadoop fs -put -f family_visual_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/familyvisualhistory
 hadoop fs -put -f vision_history.csv hdfs://namenode:8020/user/hive/warehouse/bsvdatabase.db/visionhistory
@@ -22,6 +24,12 @@ hadoop fs -put -f additional_information.csv hdfs://namenode:8020/user/hive/ware
 
 
 # To store videos of PLR Database
-hdfs dfs -mkdir -p hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos/
-hdfs dfs -put *.mp4 hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos/
-hdfs dfs -put videos_metadata.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata/
+# hdfs dfs -rm -r hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos/
+# hdfs dfs -mkdir -p hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/cropped_videos/
+# hdfs dfs -put ./cropped_videos/*.mp4 hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/cropped_videos/
+# hdfs dfs -put videos_metadata.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/videos_metadata/
+# hdfs dfs -mkdir -p hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/output_csvs/
+# hdfs dfs -put ./output_csvs/*.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/output_csvs/
+hadoop fs -put -f video_metadata.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/cropped_videos_metadata
+hadoop fs -put -f combined_file_mapping.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/participant
+hadoop fs -put -f csv_metadata.csv hdfs://namenode:8020/user/hive/warehouse/plrdatabase.db/output_csvs_metadata
