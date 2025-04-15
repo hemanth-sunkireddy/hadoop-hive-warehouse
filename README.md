@@ -1,5 +1,8 @@
 # Hadoop Hive
 
+A Hadoop-Hive data warehouse pipeline for storing and querying multiple types of data, including structured data (Excel/CSV) and unstructured files (videos/images), using SQL and Python.
+
+
 ## Data Preprocessing
 
 * Change the sheet names to all lowercase and without spaces in the sheet names for storing in correct databases.
