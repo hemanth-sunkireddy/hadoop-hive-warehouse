@@ -2,6 +2,13 @@
 
 A Hadoop-Hive data warehouse pipeline for storing and querying multiple types of data, including structured data (Excel/CSV) and unstructured files (videos/images), using SQL and Python.
 
+## Example Output
+### Hadoop
+![Hadoop Result](hadoop.png)
+### Hive
+![Hive Result](hive.png)
+
+
 
 ## Data Preprocessing
 
