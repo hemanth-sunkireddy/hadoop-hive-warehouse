@@ -2,6 +2,7 @@
 
 A Hadoop-Hive data warehouse pipeline for storing and querying multiple types of data, including structured data (Excel/CSV) and unstructured files (videos/images), using SQL and Python.
 
+> My VPS Cred: 93.127.166.113
 ## Example Output
 ### Hadoop
 ![Hadoop Result](hadoop.png)
